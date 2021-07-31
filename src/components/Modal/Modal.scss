@@ -1,0 +1,55 @@
+.modal {
+  background-color: #fff;
+  width: 400px;
+  height: fit-content;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: auto;
+ top: 0; right: 0; bottom: 0; left: 0;
+  position: absolute;
+  z-index: 200;
+
+  @media (min-width:300px) and (max-width: 399px) {
+    width: 80%;
+  }
+
+  h4 {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    button {
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 15px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    .btn-confirm {
+      border: none;
+      background-color: #ff0000;
+      color: #fff;
+
+      &:hover {
+        background-color: #a14f4f;
+      }
+    }
+
+    .btn-cancel {
+      border: 1px solid #ff0000;
+      background-color: #fff;
+      color: #ff0000;
+
+      &:hover {
+        background-color: beige;
+      }
+    }
+  }
+}

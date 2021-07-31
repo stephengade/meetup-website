@@ -1,0 +1,69 @@
+.modal {
+  background-color: #fff;
+  width: 400px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 200;
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+.modal h4 {
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal-buttons button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.modal-buttons .btn-confirm {
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.modal-buttons .btn-confirm:hover {
+  background-color: #a14f4f;
+}
+
+.modal-buttons .btn-cancel {
+  border: 1px solid #ff0000;
+  background-color: #fff;
+  color: #ff0000;
+}
+
+.modal-buttons .btn-cancel:hover {
+  background-color: beige;
+}
+/*# sourceMappingURL=Modal.css.map */
