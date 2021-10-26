@@ -1,0 +1,60 @@
+header {
+ 
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: .5rem 10rem;
+
+    @media screen and (min-width: 325px) and (max-width:600px) {
+       flex-direction: column;
+       padding: .5rem;
+    } 
+
+    .nav-brand {
+      h3 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 2rem;
+
+        @media screen and (min-width: 325px) and (max-width:600px) {
+         text-align: center;
+       } 
+      }
+    }
+  }
+}
+
+.nav-menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      @media screen and (min-width: 325px) and (max-width:600px) {
+       justify-content:center;
+       margin-top: 5px;
+      } 
+
+      li {
+        margin-left: 2.5rem;
+        a {
+          font-size: 1.5rem;
+          color: #fff;
+          line-height: 3rem;
+          font-weight: 500;
+
+          &:hover {
+            border-bottom: 2px solid #fff;
+            border-bottom-color: aqua;
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+  }

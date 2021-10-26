@@ -1,0 +1,122 @@
+.event-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.event-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .event-list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.event-list li:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.event-list li .event-image img {
+  width: 280px;
+  height: 100%;
+  border-right: 5px solid #ff0000;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .event-list li .event-image img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 5px solid #ff0000;
+    height: 200px;
+  }
+}
+
+.event-list li .event-content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .event-list li .event-content {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+}
+
+.event-list li .event-content h3 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.event-list li .event-content .eventHost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.event-list li .event-content .eventHost p {
+  font-size: 12px;
+}
+
+.event-list li .event-content .eventHost p:last-child {
+  margin-left: 20px;
+}
+
+.event-list li .event-content .event-address {
+  margin: 1rem 0;
+  font-size: 15px;
+}
+
+.event-list li .event-content .event-description {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  padding-right: 10%;
+}
+
+.event-list li .event-content button {
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 6px 16px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.event-list li .event-content button:hover {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  background-color: #fff;
+}
+/*# sourceMappingURL=TheMeetups.css.map */

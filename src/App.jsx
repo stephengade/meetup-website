@@ -1,15 +1,27 @@
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import Todo from "./components/Todo/Todo";
+
+import AllEvents from "./pages/AllEvents";
+import NewEvents from "./pages/NewEvents";
+import FavouriteEvents from "./pages/FavouriteEvents";
 
 const App = () => {
   return (
-    <div className="todo">
-      <h2>Daily Tasks</h2>
-      <Todo title="Brushing my teeth" />
-      <Todo title="15 minutes prayer" />
-      <Todo title="Breakfast" />
-      <Todo title="Learn how to Code" />
-    </div>
+    <>
+      <Switch>
+        <Route path="/" exact>
+          <AllEvents />
+        </Route>
+
+        <Route path="/new-event">
+          <NewEvents />
+        </Route>
+
+        <Route path="/my-favourite">
+          <FavouriteEvents />
+        </Route>
+      </Switch>
+    </>
   );
 };
 

@@ -1,0 +1,74 @@
+header .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  padding: .5rem 10rem;
+}
+
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  header .main-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: .5rem;
+  }
+}
+
+header .main-header .nav-brand h3 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  header .main-header .nav-brand h3 {
+    text-align: center;
+  }
+}
+
+.nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  .nav-menu ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
+  }
+}
+
+.nav-menu ul li {
+  margin-left: 2.5rem;
+}
+
+.nav-menu ul li a {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.nav-menu ul li a:hover {
+  border-bottom: 2px solid #fff;
+  border-bottom-color: aqua;
+}
+
+.active {
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=NavMenu.css.map */

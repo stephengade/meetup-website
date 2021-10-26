@@ -1,0 +1,50 @@
+.main-hero {
+    height: 50vh;
+    background-image: url(https://business.clickdo.co.uk/wp-content/uploads/2019/02/join-the-Entrepreneurs-in-LondonEIL-is-Europes-biggest-business-meetup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        width: 50%;
+
+        @media screen and (min-width: 325px) and (max-width:600px) {
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+
+    form {
+        background-color: #fff;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 10px;
+
+        @media screen and (min-width: 325px) and (max-width:600px) {
+            width: 70%;
+         
+        }
+
+        input {
+            background: none;
+            outline: none;
+            border: none;
+            height: inherit;
+            width: 100%;
+            font-size: 1.8rem;
+        }
+
+        button {
+            background-color: none;
+        }
+    }
+}

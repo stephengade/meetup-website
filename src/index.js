@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App";
 
+import NavMenu from "../src/components/Nav/NavMenu.jsx";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
+    <NavMenu />
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </BrowserRouter>,
+  document.getElementById("root")
 );
-
