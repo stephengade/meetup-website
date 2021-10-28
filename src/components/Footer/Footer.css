@@ -1,0 +1,113 @@
+footer .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: black;
+  padding: 5rem;
+}
+
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  footer .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  footer .main-footer .footer-brand, footer .main-footer .footer-menu, footer .main-footer .footer-subscribe {
+    margin: 2rem;
+    width: 70%;
+  }
+}
+
+footer .main-footer .footer-brand h3, footer .main-footer .footer-menu h3, footer .main-footer .footer-subscribe h3 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+footer .main-footer .footer-brand p, footer .main-footer .footer-menu p, footer .main-footer .footer-subscribe p {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2rem;
+  font-weight: 500;
+  padding-right: 15%;
+  margin-top: 5px;
+}
+
+.footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-menu ul li {
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+.footer-menu ul li a {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.footer-menu ul li a:hover {
+  border-bottom: 2px solid #fff;
+  border-bottom-color: aqua;
+}
+
+.f_active {
+  border-bottom: 2px solid #ff0000;
+}
+
+.footer-subscribe form {
+  width: inherit;
+}
+
+.footer-subscribe form input {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+}
+
+.footer-subscribe form button {
+  outline: none;
+  border: none;
+  background-color: red;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #fff;
+  margin: 1rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-brand, .footer-subscribe, .footer-menu {
+  width: 33%;
+}
+
+.footer-menu {
+  margin-left: 100px;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,6 +1,7 @@
 .main-hero {
-  height: 50vh;
-  background-image: url(https://business.clickdo.co.uk/wp-content/uploads/2019/02/join-the-Entrepreneurs-in-LondonEIL-is-Europes-biggest-business-meetup.jpg);
+  height: 70vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(243, 43, 96, 0.5)), to(rgba(255, 143, 31, 0.5))), url(https://business.clickdo.co.uk/wp-content/uploads/2019/02/join-the-Entrepreneurs-in-LondonEIL-is-Europes-biggest-business-meetup.jpg);
+  background-image: linear-gradient(to top, rgba(243, 43, 96, 0.5), rgba(255, 143, 31, 0.5)), url(https://business.clickdo.co.uk/wp-content/uploads/2019/02/join-the-Entrepreneurs-in-LondonEIL-is-Europes-biggest-business-meetup.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -19,17 +20,33 @@
   color: #fff;
 }
 
-.main-hero h2 {
-  font-size: 3rem;
-  font-weight: 900;
+.main-hero .event-info {
+  font-size: 2rem;
+  line-height: 3rem;
   text-align: center;
   width: 50%;
+  margin: 1rem auto;
+}
+
+@media screen and (min-width: 325px) and (max-width: 600px) {
+  .main-hero .event-info {
+    width: 90%;
+    font-size: 1.4rem;
+    linw-height: 2rem;
+  }
+}
+
+.main-hero h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  width: 60%;
 }
 
 @media screen and (min-width: 325px) and (max-width: 600px) {
   .main-hero h2 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 

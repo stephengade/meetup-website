@@ -1,4 +1,4 @@
-header .main-header {
+header .mainHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,11 +6,11 @@ header .main-header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: black;
-  padding: .5rem 10rem;
+  padding: 1rem 10rem;
 }
 
 @media screen and (min-width: 325px) and (max-width: 600px) {
-  header .main-header {
+  header .mainHeader {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -19,19 +19,26 @@ header .main-header {
   }
 }
 
-header .main-header .nav-brand h3 {
+header .mainHeader .navBrand h3 {
   color: #fff;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 @media screen and (min-width: 325px) and (max-width: 600px) {
-  header .main-header .nav-brand h3 {
+  header .mainHeader .navBrand h3 {
     text-align: center;
   }
 }
 
-.nav-menu ul {
+.navMenu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navMenu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +49,7 @@ header .main-header .nav-brand h3 {
 }
 
 @media screen and (min-width: 325px) and (max-width: 600px) {
-  .nav-menu ul {
+  .navMenu ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -50,18 +57,18 @@ header .main-header .nav-brand h3 {
   }
 }
 
-.nav-menu ul li {
+.navMenu ul li {
   margin-left: 2.5rem;
 }
 
-.nav-menu ul li a {
+.navMenu ul li a {
   font-size: 1.5rem;
   color: #fff;
   line-height: 3rem;
   font-weight: 500;
 }
 
-.nav-menu ul li a:hover {
+.navMenu ul li a:hover {
   border-bottom: 2px solid #fff;
   border-bottom-color: aqua;
 }
@@ -71,4 +78,14 @@ header .main-header .nav-brand h3 {
   padding: 5px;
   border-radius: 5px;
 }
-/*# sourceMappingURL=NavMenu.css.map */
+
+.navBadge {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  color: red;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=NavMenu.module.css.map */

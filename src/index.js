@@ -5,11 +5,16 @@ import "./index.css";
 import App from "./App";
 
 import NavMenu from "../src/components/Nav/NavMenu.jsx";
+import Footer from "./components/Footer/Footer";
+import { Wishlist } from "../src/store/Wishlist";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <NavMenu />
-    <App />
-  </BrowserRouter>,
+  <Wishlist>
+    <BrowserRouter>
+      <NavMenu />
+      <App />
+      <Footer />
+    </BrowserRouter>
+  </Wishlist>,
   document.getElementById("root")
 );

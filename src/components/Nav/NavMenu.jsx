@@ -1,35 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import "./NavMenu.css";
+import Wishlist from "../../store/Wishlist";
+import classes from "./NavMenu.module.css";
 
-function NavMenu(props) {
+function NavMenu() {
+  const WishlistCtx = useContext(Wishlist);
+
   return (
     <header>
-      <div className="main-header">
-        <div className="nav-brand">
+      <div className={classes.mainHeader}>
+        <div className={classes.navBrand}>
           <h3>Stefenta</h3>
         </div>
 
-        <div className="nav-menu">
+        <div className={classes.navMenu}>
           <ul>
-            <li className="nav-item">
-              <NavLink to="/" exact activeClassName="active">
+            <li className={classes.navItems}>
+              <NavLink to="/" exact activeClassName={classes.active}>
                 All Events
               </NavLink>
             </li>
 
-            <li className="nav-item">
-              <NavLink to="/new-event" activeClassName="active">
+            <li className={classes.navItems}>
+              <NavLink to="/new-event" activeClassName={classes.active}>
                 New Events
               </NavLink>
             </li>
 
-            <li className="nav-item">
-              <NavLink
-                to="/my-favourite"
-                activeClassName="active"
-              >
-                Favourite ❤️
+            <li className={classes.navItems}>
+              <NavLink to="/my-favourite" activeClassName={classes.active}>
+                Wishlist{" "}
+                <span className={classes.navBadge}>{WishlistCtx.maxFavourites}</span>
               </NavLink>
             </li>
           </ul>

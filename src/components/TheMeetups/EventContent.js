@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./TheMeetups.css";
+import WishlistContext from "../../store/Wishlist";
 
 function EventContent(props) {
+  const wishlistCtx = useContext(WishlistContext);
+
+  const userWishlist = wishlistCtx.userWishlist(props.id);
+
+  const toggleWishlistStatus = () => {
+    if (userWishlist) {
+      wishlistCtx.removeWishlist(props.id);
+    } else {
+      wishlistCtx.addWishlist({
+        id: props.id,
+        title: props.title,
+        host: props.host,
+        image: props.photo,
+        address: props.address,
+        description: props.description,
+        time: props.time,
+      });
+    }
+  };
+
+  const copyEventLink = () => {
+   // copy link shit goes here
+  };
   return (
     <li>
       <div className="event-image">
@@ -35,7 +59,18 @@ function EventContent(props) {
         </address>
         <p className="event-description">{props.description}</p>
 
-        <button>Add to Box</button>
+        <span className="d-flex">
+          <button onClick={toggleWishlistStatus}>
+            {userWishlist ? "Delete from wishlist" : "Add to Wishlist"}
+          </button>
+          <p className="copy-link" onClick={copyEventLink}>
+            <img
+              src="https://img.icons8.com/material-rounded/17/ff0000/copy-link.png"
+              alt="copy link"
+            />{" "}
+            Copy Link
+          </p>
+        </span>
       </div>
     </li>
   );

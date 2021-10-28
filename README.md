@@ -1,22 +1,13 @@
 
 # About Project
 
-This project is a practice, and a journey into the world of React.JS
+Making a basic event (meetup) website with ReactJs
 
-# Tutor
+# Step to Install
 
-Maximilian Schwarzmuller of Acamind
+- git clone <REPO LINK>
+- npm install // to install dependencies
+- npm start // to start projects
 
-# My Previous Knowledge
+Make changes to files by navigating to SRC >> COMPONENTS
 
-HTML, CSS, SASS, Bootstrap, Vanilla Javascript and Responsive web design.
-
-# Objective
-
-To master the basics of ReactJS and practice with the knowledge gained. Then, I'll move on to purchasing a premium course.
-
-# Why React?
-
-Because it is the most popular JavaScript library, and most jobs (frontend) I sees online has ReactJS as one of the requirements.
-
-# Goodluck 😎😎

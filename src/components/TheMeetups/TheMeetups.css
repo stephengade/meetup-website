@@ -21,6 +21,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
@@ -118,5 +119,32 @@
   border: 1px solid #ff0000;
   color: #ff0000;
   background-color: #fff;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copy-link {
+  font-size: 1.3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 10%;
+  cursor: pointer;
+  display: none;
+}
+
+.copy-link:hover {
+  opacity: .5;
 }
 /*# sourceMappingURL=TheMeetups.css.map */

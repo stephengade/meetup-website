@@ -13,6 +13,8 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         background-color: #fff;
+        border-radius: 10px;
+        
 
         @media screen and (min-width:300px) and (max-width: 800px) {
             flex-direction: column;
@@ -102,5 +104,23 @@
                 }
             }
         }
+    }
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copy-link {
+    font-size: 1.3rem;
+    align-self: center;
+    padding-right: 10%;
+    cursor: pointer;
+    display: none;
+
+    &:hover {
+        opacity: .5;
     }
 }

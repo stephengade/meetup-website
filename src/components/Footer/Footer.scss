@@ -1,0 +1,114 @@
+
+
+footer {
+ 
+
+  
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 5rem;
+    
+   
+   
+    
+
+
+    @media screen and (min-width: 325px) and (max-width:600px) {
+       flex-direction: column;
+        padding: 0;
+    } 
+
+    .footer-brand, .footer-menu, .footer-subscribe {
+      
+    
+      @media screen and (min-width: 325px) and (max-width:600px) {
+        margin: 2rem;
+        width: 70%;
+      } 
+     
+      
+      h3 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        
+      
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #fff;
+        line-height: 2rem;
+        font-weight: 500;
+        padding-right: 15%;
+        margin-top: 5px;
+       
+      }
+    }
+  }
+}
+
+.footer-menu {
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-left: 0;
+        margin-top: 5px;
+        a {
+          font-size: 1.5rem;
+          color: #fff;
+          line-height: 3rem;
+          font-weight: 500;
+
+          &:hover {
+            border-bottom: 2px solid #fff;
+            border-bottom-color: aqua;
+          }
+        }
+      }
+    }
+  }
+
+  .f_active {
+  border-bottom: 2px solid #ff0000;
+  }
+
+.footer-subscribe {
+  form {
+    width: inherit;
+    input {
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      outline: none;
+      border: none;
+
+    }
+
+    button {
+      outline: none;
+      border: none;
+      background-color: red;
+      padding: 1rem 2rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color:#fff;
+      margin: 1rem auto 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.footer-brand, .footer-subscribe, .footer-menu {
+  width: 33%;
+}
+
+.footer-menu {
+  margin-left: 100px;
+}
