@@ -11,3 +11,4 @@ Making a basic event (meetup) website with ReactJs
 
 Make changes to files by navigating to SRC >> COMPONENTS
 
+Building a basic event website with ReactJs
